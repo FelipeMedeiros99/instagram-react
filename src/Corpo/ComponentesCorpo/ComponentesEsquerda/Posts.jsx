@@ -1,4 +1,3 @@
-import Icones from "../"
 export default function Posts() {
     return (
         <div class="posts">
