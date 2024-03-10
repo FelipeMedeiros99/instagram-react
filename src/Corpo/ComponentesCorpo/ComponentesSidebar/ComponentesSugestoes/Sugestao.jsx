@@ -4,7 +4,7 @@ export default function Sugestao(props){
             <div class="usuario">
                 <img src={`assets/img/${props.nome}.svg`} />
                 <div class="texto">
-                    <div class="nome">props.nome</div>
+                    <div class="nome">{props.nome}</div>
                     <div class="razao">{props.razao}</div>
                 </div>
             </div>

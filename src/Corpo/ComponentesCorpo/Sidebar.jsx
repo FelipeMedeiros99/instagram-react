@@ -1,19 +1,15 @@
 import Usuario from "./ComponentesSidebar/Usuario"
 import Sugestoes from "./ComponentesSidebar/Sugestoes"
+import Links from "./ComponentesSidebar/Links"
+import Copyright from "./ComponentesSidebar/Copyright"
+
 export default function Sidebar() {
     return (
         <div class="sidebar">
-            <Usuario />
-
+            <Usuario /> 
             <Sugestoes />
-
-            <div class="links">
-                Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
-            </div>
-
-            <div class="copyright">
-                © 2021 INSTAGRAM DO FACEBOOK
-            </div>
+            <Links />
+            <Copyright />
         </div>
     )
 }
