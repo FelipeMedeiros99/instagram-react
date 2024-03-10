@@ -1,7 +1,7 @@
-import Icones from "../../../Icones"
+import Icones from "../../../Ferramentas/Icones"
 
-function Story(props){
-    return(
+function Story(props) {
+    return (
         <div class="story">
             <div class="imagem">
                 <img src={`assets/img/${props.nome}.svg`} />
@@ -15,16 +15,10 @@ function Story(props){
 
 
 export default function Stories() {
+    let nomes = ['9gag', 'meowed', 'barked', 'nathanwpylestrangeplanet', 'wawawicomics', "respondeai", "filomoderna", "memeriagourmet"]
     return (
         <div class="stories">
-            <Story nome='9gag' />
-            <Story nome='meowed' />
-            <Story nome='barked' />
-            <Story nome='nathanwpylestrangeplanet' />
-            <Story nome='wawawicomics' />
-            <Story nome="respondeai" />
-            <Story nome="filomoderna" />
-            <Story nome="memeriagourmet" />
+            {nomes.map(nome => (<Story nome={nome} />))}
             <Icones classe='setinha' nome='chevron-forward-circle' />
         </div>
     )
