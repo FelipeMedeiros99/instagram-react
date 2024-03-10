@@ -1,4 +1,4 @@
-import Icones from "../Icones"
+import Icones from "../../../Icones"
 
 function Story(props){
     return(
