@@ -1,6 +1,19 @@
+import Post from "./ComponentesPosts/Post"
+import DadosUsuarios from "./ComponentesPosts/DadosUsuario"
 export default function Posts() {
+    let postagensUsuarios = DadosUsuarios()
+    
     return (
         <div class="posts">
+
+            {postagensUsuarios.map((publicacao) =>(
+                <Post nome_imagem={publicacao.nome_imagem} 
+                nome_imagem_principal={publicacao.nome_imagem_principal}
+                curtida_principal={publicacao.curtida_principal}
+                quantidade_de_curtidas={publicacao.quantidade_de_curtidas} />
+            ))}
+
+
             <div class="post">
                 <div class="topo">
                     <div class="usuario">
@@ -72,7 +85,11 @@ export default function Posts() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
+
+
         </div>
+            
+                
     )
 }
